@@ -7,5 +7,53 @@
 }
 
 body {
+  background: $background-light;
+  font-family: $main-font;
+  font-size: 15px;
+  line-height: 25px;
   min-height: 100vh;
+  padding: 30px 25px 80px 25px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  &__page-style-name {
+    letter-spacing: 2.5px;
+  }
+
+  &__page-style-button {
+    background: none;
+    border: none;
+    display: flex;
+    text-transform: uppercase;
+  }
+
+  &__icon-container {
+    margin-left: 16px;
+  }
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 38px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 13px;
+  line-height: 20px;
 }
