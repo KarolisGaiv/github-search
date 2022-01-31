@@ -15,27 +15,6 @@ body {
   padding: 30px 25px 80px 25px;
 }
 
-.header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-
-  &__page-style-name {
-    letter-spacing: 2.5px;
-  }
-
-  &__page-style-button {
-    background: none;
-    border: none;
-    display: flex;
-    text-transform: uppercase;
-  }
-
-  &__icon-container {
-    margin-left: 16px;
-  }
-}
-
 h1 {
   font-size: 26px;
   font-weight: bold;

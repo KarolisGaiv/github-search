@@ -1,0 +1,22 @@
+@import '../../styles/base/base';
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  &__page-style-name {
+    letter-spacing: 2.5px;
+  }
+
+  &__page-style-button {
+    background: none;
+    border: none;
+    display: flex;
+    text-transform: uppercase;
+  }
+
+  &__icon-container {
+    margin-left: 16px;
+  }
+}
