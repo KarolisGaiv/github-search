@@ -15,9 +15,45 @@ function UserProfile({ userData }) {
             {userData.created_at}
           </p>
         </div>
-        <p className='user__biography'></p>
-        <div className='user__statistics-wrapper'></div>
-        <div className='user__contact-details'></div>
+        <p className='user__biography'>
+          {userData.bio ? userData.bio : 'This profile has no bio'}
+        </p>
+        <div className='user__statistics-wrapper'>
+          <div className='user__statistics-wrapper__repo-details'>
+            <p className='user__statistics-wrapper__detail-header'>Repos</p>
+            <p className='user__statistics-wrapper__number'>
+              {userData.public_repos}
+            </p>
+          </div>
+          <div className='user__statistics-wrapper__repo-details'>
+            <p className='user__statistics-wrapper__detail-header'>Followers</p>
+            <p className='user__statistics-wrapper__number'>
+              {userData.followers}
+            </p>
+          </div>
+          <div className='user__statistics-wrapper__repo-details'>
+            <p className='user__statistics-wrapper__detail-header'>Following</p>
+            <p className='user__statistics-wrapper__number'>
+              {userData.following}
+            </p>
+          </div>
+        </div>
+        <ul className='user__contact-details'>
+          <li>
+            <p>{userData.location}</p>
+          </li>
+          <li>
+            <a href={userData.blog}>{userData.blog}</a>
+          </li>
+          <li>
+            <a href={userData.twitter_username}>{userData.twitter_username}</a>
+          </li>
+          <li>
+            <a href={`https://github.com/${userData.company}`}>
+              {userData.company}
+            </a>
+          </li>
+        </ul>
       </header>
     </main>
   );
