@@ -5,13 +5,13 @@ import { ReactComponent as SearchIcon } from '../../assets/icon-search.svg';
 function SearchBar() {
   return (
     <form className='search-form'>
-      <span>
+      <span className='search-form__icon'>
         <SearchIcon />
       </span>
       <label className='visuallyhidden ' htmlFor='githubName'>
         Search Github username
       </label>
-      <input type='text' placeholder='Search Github username' />
+      <input type='text' placeholder='Search Github username...' />
       <button type='submit'>Search</button>
     </form>
   );
