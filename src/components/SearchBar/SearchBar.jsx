@@ -11,8 +11,10 @@ function SearchBar() {
       <label className='visuallyhidden ' htmlFor='githubName'>
         Search Github username
       </label>
-      <input type='text' placeholder='Search Github username...' />
-      <button type='submit'>Search</button>
+      <input type='text' placeholder='Search GitHub username...' />
+      <button type='submit' className='search-form__search-btn'>
+        Search
+      </button>
     </form>
   );
 }

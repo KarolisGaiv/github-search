@@ -6,19 +6,36 @@
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   border-radius: 15px;
   display: flex;
+  padding: 8px;
 
   &__icon {
-    margin-right: 10px;
+    display: flex;
+    margin: 8px 6px;
   }
 
   input {
     border: none;
     font-family: inherit;
+    font-size: 13px;
+    text-overflow: ellipsis;
     width: 100%;
 
     &::placeholder {
       color: $clr-font-blue;
     }
+  }
+
+  &__search-btn {
+    background: $azure-radiance;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    min-width: 85px;
+    padding: 14px 12px;
+    text-align: center;
   }
 }
 
