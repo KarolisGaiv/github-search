@@ -16,7 +16,9 @@ function UserProfile({ userData }) {
           </p>
         </div>
         <p className='user__biography'>
-          {userData.bio ? userData.bio : 'This profile has no bio'}
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          deserunt odit ex tempora quasi modi, quaerat ea atque nisi deleniti.
+          {/* {userData.bio ? userData.bio : 'This profile has no bio'} */}
         </p>
         <div className='user__statistics-wrapper'>
           <div className='user__statistics-wrapper__repo-details'>
