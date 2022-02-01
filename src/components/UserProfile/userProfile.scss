@@ -7,9 +7,22 @@
   margin-top: 16px;
   padding: 32px 24px 48px 24px;
 
+  &__header {
+    display: flex;
+
+    &__avatar {
+      border-radius: 50%;
+      height: 75px;
+    }
+  }
+
   &__biography {
     @media (max-width: $breakpoint-phone) {
       font-size: 13px;
     }
+  }
+
+  &__contact-details {
+    list-style: none;
   }
 }
