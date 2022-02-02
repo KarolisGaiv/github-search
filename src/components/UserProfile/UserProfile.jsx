@@ -2,13 +2,15 @@ import './userProfile.scss';
 import React from 'react';
 
 function UserProfile({ userData }) {
-  // function changeDateFormat(date) {
-  //   console.log(date.toString());
-  // }
+  function changeDateFormat(date) {
+    let test = new Date(date);
+    let test2 =
+      test.getFullYear() + ' ' + (test.getMonth() + 1 + ' ' + test.getDate());
+    return test2;
+  }
 
   return (
     <main className='user'>
-      {console.log(userData)}
       <header className='user__header'>
         <img
           src={userData.avatar_url}
@@ -19,7 +21,7 @@ function UserProfile({ userData }) {
           <h1 className='user__details-container__name'>{userData.name}</h1>
           <h3 className='user__details-container__login'>@{userData.login}</h3>
           <p className='user__details-container__joined-data'>
-            Joined {userData.created_at}
+            Joined {changeDateFormat(userData.created_at)}
           </p>
         </div>
       </header>
