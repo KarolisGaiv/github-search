@@ -49,6 +49,14 @@
     }
   }
 
+  &__statistics-wrapper {
+    background: $background-light;
+    border-radius: 10px;
+    display: flex;
+    margin: 25px 0;
+    padding: 18px 14px;
+  }
+
   &__contact-details {
     list-style: none;
   }
