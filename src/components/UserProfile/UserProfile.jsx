@@ -26,10 +26,14 @@ function UserProfile({ userData }) {
           </p>
         </div>
       </header>
-      <p className='user__biography'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-        deserunt odit ex tempora quasi modi, quaerat ea atque nisi deleniti.
-        {/* {userData.bio ? userData.bio : 'This profile has no bio'} */}
+      <p
+        className={
+          userData.bio
+            ? 'user__biography'
+            : 'user__biography user__biography --error'
+        }
+      >
+        {userData.bio ? userData.bio : 'This profile has no bio'}
       </p>
       <div className='user__statistics-wrapper'>
         <div className='user__statistics-wrapper__repo-details'>

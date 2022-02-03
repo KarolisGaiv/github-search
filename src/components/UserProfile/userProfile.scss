@@ -44,6 +44,10 @@
   }
 
   &__biography {
+    &.--error {
+      opacity: 0.75;
+    }
+
     @media (max-width: $breakpoint-phone) {
       font-size: 13px;
     }
