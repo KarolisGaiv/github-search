@@ -53,8 +53,27 @@
     background: $background-light;
     border-radius: 10px;
     display: flex;
+    justify-content: space-between;
     margin: 25px 0;
     padding: 18px 14px;
+    text-align: center;
+
+    &__repo-details {
+      margin-inline: 15px;
+    }
+
+    &__detail-header {
+      font-size: 11px;
+      line-height: 16px;
+      margin-bottom: 8px;
+    }
+
+    &__number {
+      color: $ebony-clay;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 24px;
+    }
   }
 
   &__contact-details {
