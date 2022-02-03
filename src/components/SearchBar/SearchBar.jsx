@@ -9,12 +9,13 @@ function SearchBar({ setSearchQuery }) {
     setUserInput(e.target.value);
   }
 
-  function handleSubmit() {
+  function handleSubmit(e) {
+    e.preventDefault();
     setSearchQuery(userInput);
   }
 
   return (
-    <form className='search-form' onSubmit={handleSubmit}>
+    <form className='search-form' onSubmit={(e) => handleSubmit(e)}>
       <span className='search-form__icon'>
         <SearchIcon />
       </span>
