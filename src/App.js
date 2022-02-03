@@ -10,18 +10,20 @@ function App() {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [searchQuery]);
 
   const fetchData = async () => {
+    console.log(searchQuery);
     const response = await fetch(`https://api.github.com/users/${searchQuery}`);
     const data = await response.json();
     setUserData(data);
+    console.log(userData);
   };
 
   return (
     <div>
       <Header />
-      <SearchBar />
+      <SearchBar setSearchQuery={setSearchQuery} />
       <UserProfile userData={userData} />
     </div>
   );
