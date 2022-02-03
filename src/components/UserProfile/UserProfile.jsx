@@ -3,10 +3,11 @@ import React from 'react';
 
 function UserProfile({ userData }) {
   function changeDateFormat(date) {
-    let test = new Date(date);
-    let test2 =
-      test.getFullYear() + ' ' + (test.getMonth() + 1 + ' ' + test.getDate());
-    return test2;
+    let dateObj = new Date(date);
+    let month = dateObj.toLocaleString('default', { month: 'short' });
+    let formatedDate =
+      dateObj.getDate() + ' ' + month + ' ' + dateObj.getFullYear();
+    return formatedDate;
   }
 
   return (
