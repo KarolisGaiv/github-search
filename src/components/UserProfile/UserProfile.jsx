@@ -10,6 +10,13 @@ function UserProfile({ userData }) {
     return formatedDate;
   }
 
+  function displayContactDetails(details) {
+    if (!details) {
+      return 'Not Available';
+    }
+    return details;
+  }
+
   return (
     <main className='user'>
       <header className='user__header'>
@@ -58,17 +65,19 @@ function UserProfile({ userData }) {
 
       <ul className='user__contact-details'>
         <li>
-          <p>{userData.location}</p>
+          <p>{displayContactDetails(userData.location)}</p>
         </li>
         <li>
-          <a href={userData.blog}>{userData.blog}</a>
+          <a href={userData.blog}>{displayContactDetails(userData.blog)}</a>
         </li>
         <li>
-          <a href={userData.twitter_username}>{userData.twitter_username}</a>
+          <a href={userData.twitter_username}>
+            {displayContactDetails(userData.twitter_username)}
+          </a>
         </li>
         <li>
           <a href={`https://github.com/${userData.company}`}>
-            {userData.company}
+            {displayContactDetails(userData.company)}
           </a>
         </li>
       </ul>
