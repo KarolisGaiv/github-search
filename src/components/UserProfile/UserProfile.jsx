@@ -1,5 +1,9 @@
 import './userProfile.scss';
 import React from 'react';
+import { ReactComponent as LocationIcon } from '../../assets/icon-location.svg';
+import { ReactComponent as WebsiteIcon } from '../../assets/icon-website.svg';
+import { ReactComponent as TwitterIcon } from '../../assets/icon-twitter.svg';
+import { ReactComponent as CompanyIcon } from '../../assets/icon-company.svg';
 
 function UserProfile({ userData }) {
   function changeDateFormat(date) {
@@ -65,17 +69,21 @@ function UserProfile({ userData }) {
 
       <ul className='user__contact-details'>
         <li>
+          <LocationIcon className='user__contact-details__icon' />
           <p>{displayContactDetails(userData.location)}</p>
         </li>
         <li>
+          <WebsiteIcon className='user__contact-details__icon' />
           <a href={userData.blog}>{displayContactDetails(userData.blog)}</a>
         </li>
         <li>
+          <TwitterIcon className='user__contact-details__icon' />
           <a href={userData.twitter_username}>
             {displayContactDetails(userData.twitter_username)}
           </a>
         </li>
         <li>
+          <CompanyIcon className='user__contact-details__icon' />
           <a href={`https://github.com/${userData.company}`}>
             {displayContactDetails(userData.company)}
           </a>
