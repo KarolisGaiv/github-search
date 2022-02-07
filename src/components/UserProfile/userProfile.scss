@@ -17,6 +17,7 @@
 
     @media (min-width: $breakpoint-tablet) {
       align-items: center;
+      margin-bottom: 25px;
     }
 
     &__avatar {
@@ -74,6 +75,10 @@
     margin: 25px 0;
     padding: 18px 14px;
     text-align: center;
+
+    @media (min-width: $breakpoint-tablet) {
+      margin: 32px 0;
+    }
 
     &__repo-details {
       margin-inline: 15px;
