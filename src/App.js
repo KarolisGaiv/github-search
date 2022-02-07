@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className='content'>
       <Header />
       <SearchBar setSearchQuery={setSearchQuery} />
       <UserProfile userData={userData} />
