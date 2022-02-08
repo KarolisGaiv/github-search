@@ -14,7 +14,9 @@ body {
   line-height: 25px;
   min-height: 100vh;
   padding: 30px 25px 80px 25px;
+}
 
+.content {
   @media (min-width: $breakpoint-tablet) {
     margin: auto;
     max-width: 575px;

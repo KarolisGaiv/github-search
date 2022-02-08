@@ -68,50 +68,54 @@ function UserProfile({ userData }) {
       </div>
 
       <ul className='user__contact-details'>
-        <li
-          className={
-            userData.location
-              ? 'user__contact-details__item'
-              : 'user__contact-details__item user__contact-details__item --no-details'
-          }
-        >
-          <LocationIcon className='user__contact-details__icon' />
-          <p>{displayContactDetail(userData.location)}</p>
-        </li>
-        <li
-          className={
-            userData.blog
-              ? 'user__contact-details__item'
-              : 'user__contact-details__item user__contact-details__item --no-details'
-          }
-        >
-          <WebsiteIcon className='user__contact-details__icon' />
-          <a href={userData.blog}>{displayContactDetail(userData.blog)}</a>
-        </li>
-        <li
-          className={
-            userData.twitter_username
-              ? 'user__contact-details__item'
-              : 'user__contact-details__item user__contact-details__item --no-details'
-          }
-        >
-          <TwitterIcon className='user__contact-details__icon' />
-          <a href={userData.twitter_username}>
-            {displayContactDetail(userData.twitter_username)}
-          </a>
-        </li>
-        <li
-          className={
-            userData.company
-              ? 'user__contact-details__item'
-              : 'user__contact-details__item user__contact-details__item --no-details'
-          }
-        >
-          <CompanyIcon className='user__contact-details__icon' />
-          <a href={`https://github.com/${userData.company}`}>
-            {displayContactDetail(userData.company)}
-          </a>
-        </li>
+        <div className='user__contact-details__container'>
+          <li
+            className={
+              userData.location
+                ? 'user__contact-details__item'
+                : 'user__contact-details__item user__contact-details__item --no-details'
+            }
+          >
+            <LocationIcon className='user__contact-details__icon' />
+            <p>{displayContactDetail(userData.location)}</p>
+          </li>
+          <li
+            className={
+              userData.blog
+                ? 'user__contact-details__item'
+                : 'user__contact-details__item user__contact-details__item --no-details'
+            }
+          >
+            <WebsiteIcon className='user__contact-details__icon' />
+            <a href={userData.blog}>{displayContactDetail(userData.blog)}</a>
+          </li>
+        </div>
+        <div className='user__contact-details__container'>
+          <li
+            className={
+              userData.twitter_username
+                ? 'user__contact-details__item'
+                : 'user__contact-details__item user__contact-details__item --no-details'
+            }
+          >
+            <TwitterIcon className='user__contact-details__icon' />
+            <a href={userData.twitter_username}>
+              {displayContactDetail(userData.twitter_username)}
+            </a>
+          </li>
+          <li
+            className={
+              userData.company
+                ? 'user__contact-details__item'
+                : 'user__contact-details__item user__contact-details__item --no-details'
+            }
+          >
+            <CompanyIcon className='user__contact-details__icon' />
+            <a href={`https://github.com/${userData.company}`}>
+              {displayContactDetail(userData.company)}
+            </a>
+          </li>
+        </div>
       </ul>
     </main>
   );
