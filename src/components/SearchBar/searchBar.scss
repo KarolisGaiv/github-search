@@ -27,6 +27,7 @@
 
     @media (min-width: $breakpoint-tablet) {
       font-size: 18px;
+      width: 70%;
     }
 
     &::placeholder {
@@ -51,6 +52,7 @@
     @media (min-width: $breakpoint-tablet) {
       font-size: 16px;
       min-width: 105px;
+      padding-inline: 24px;
     }
   }
 }
