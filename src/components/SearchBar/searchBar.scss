@@ -46,6 +46,11 @@
     min-width: 85px;
     padding: 14px 12px;
     text-align: center;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 16px;
+      min-width: 105px;
+    }
   }
 }
 
