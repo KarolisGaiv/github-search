@@ -12,6 +12,10 @@
   &__icon {
     display: flex;
     margin: 8px 6px;
+
+    @media (min-width: $breakpoint-tablet) {
+      margin-right: 25px;
+    }
   }
 
   input {
@@ -20,6 +24,10 @@
     font-size: 13px;
     text-overflow: ellipsis;
     width: 100%;
+
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 18px;
+    }
 
     &::placeholder {
       color: $clr-font-blue;
