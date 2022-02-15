@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './searchBar.scss';
 import { ReactComponent as SearchIcon } from '../../assets/icon-search.svg';
 
-function SearchBar({ setSearchQuery }) {
+function SearchBar({ setSearchQuery, currentTheme }) {
   const [userInput, setUserInput] = useState('');
 
   function handleChange(e) {
@@ -15,7 +15,14 @@ function SearchBar({ setSearchQuery }) {
   }
 
   return (
-    <form className='search-form' onSubmit={(e) => handleSubmit(e)}>
+    <form
+      className={
+        currentTheme === 'light'
+          ? 'search-form search-form --light'
+          : 'search-form search-form --dark'
+      }
+      onSubmit={(e) => handleSubmit(e)}
+    >
       <span className='search-form__icon'>
         <SearchIcon />
       </span>

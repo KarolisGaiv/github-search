@@ -2,12 +2,19 @@
 
 .search-form {
   align-items: center;
-  background: $background-white;
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   border-radius: 15px;
   display: flex;
   margin-top: 36px;
   padding: 8px;
+
+  &.--light {
+    background: $background-white;
+  }
+
+  &.--dark {
+    background: $background-cloud-burst;
+  }
 
   @media (min-width: $breakpoint-tablet) {
     padding: 10px;
@@ -24,6 +31,7 @@
   }
 
   input {
+    background: inherit;
     border: none;
     font-family: inherit;
     font-size: 13px;

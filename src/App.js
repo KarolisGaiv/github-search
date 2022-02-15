@@ -32,7 +32,10 @@ function App() {
         setBackgroundTheme={setBackgroundTheme}
         currentTheme={backgroundTheme}
       />
-      <SearchBar setSearchQuery={setSearchQuery} />
+      <SearchBar
+        setSearchQuery={setSearchQuery}
+        currentTheme={backgroundTheme}
+      />
       <UserProfile userData={userData} />
     </div>
   );
