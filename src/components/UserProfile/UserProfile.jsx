@@ -50,7 +50,13 @@ function UserProfile({ userData, currentTheme }) {
       >
         {userData.bio ? userData.bio : 'This profile has no bio'}
       </p>
-      <div className='user__statistics-wrapper'>
+      <div
+        className={
+          currentTheme === 'light'
+            ? 'user__statistics-wrapper user__statistics-wrapper --light'
+            : 'user__statistics-wrapper user__statistics-wrapper --dark'
+        }
+      >
         <div className='user__statistics-wrapper__repo-details'>
           <p className='user__statistics-wrapper__detail-header'>Repos</p>
           <p className='user__statistics-wrapper__number'>
