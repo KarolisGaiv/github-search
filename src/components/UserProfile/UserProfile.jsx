@@ -5,7 +5,7 @@ import { ReactComponent as WebsiteIcon } from '../../assets/icon-website.svg';
 import { ReactComponent as TwitterIcon } from '../../assets/icon-twitter.svg';
 import { ReactComponent as CompanyIcon } from '../../assets/icon-company.svg';
 
-function UserProfile({ userData }) {
+function UserProfile({ userData, currentTheme }) {
   function changeDateFormat(date) {
     let dateObj = new Date(date);
     let month = dateObj.toLocaleString('default', { month: 'short' });
@@ -22,7 +22,11 @@ function UserProfile({ userData }) {
   }
 
   return (
-    <main className='user'>
+    <main
+      className={
+        currentTheme === 'light' ? 'user user --light' : 'user user --dark'
+      }
+    >
       <header className='user__header'>
         <img
           src={userData.avatar_url}

@@ -1,11 +1,18 @@
 @import '../../styles/base/base';
 
 .user {
-  background: $background-white;
   border-radius: 15px;
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   margin-top: 16px;
   padding: 32px 24px 48px 24px;
+
+  &.--light {
+    background: $background-white;
+  }
+
+  &.--dark {
+    background: $background-cloud-burst;
+  }
 
   @media (min-width: $breakpoint-tablet) {
     padding: 40px;

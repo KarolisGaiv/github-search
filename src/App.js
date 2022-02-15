@@ -36,7 +36,7 @@ function App() {
         setSearchQuery={setSearchQuery}
         currentTheme={backgroundTheme}
       />
-      <UserProfile userData={userData} />
+      <UserProfile userData={userData} currentTheme={backgroundTheme} />
     </div>
   );
 }
