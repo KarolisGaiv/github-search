@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background: $background-light;
   color: $clr-font-blue;
@@ -20,6 +24,11 @@ body {
   @media (min-width: $breakpoint-tablet) {
     margin: auto;
     max-width: 575px;
+  }
+
+  @media (min-width: $breakpoint-laptop) {
+    margin: auto;
+    max-width: 730px;
   }
 }
 
