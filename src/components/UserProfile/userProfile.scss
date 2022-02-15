@@ -35,6 +35,8 @@
   &__details-container {
     &__name {
       color: $ebony-clay;
+      margin-bottom: 2px;
+
       @media (max-width: $breakpoint-phone) {
         font-size: 16px;
         line-height: 24px;
@@ -43,6 +45,8 @@
 
     &__login {
       color: $azure-radiance;
+      margin-bottom: 4px;
+
       @media (max-width: $breakpoint-phone) {
         font-size: 13px;
         line-height: 19px;
