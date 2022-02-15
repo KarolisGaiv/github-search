@@ -7,10 +7,12 @@ import { useEffect, useState } from 'react';
 function App() {
   const [searchQuery, setSearchQuery] = useState('octocat');
   const [userData, setUserData] = useState({});
+  const [backgroundTheme, setBackgroundTheme] = useState('light');
 
   useEffect(() => {
     fetchData();
-  }, [searchQuery]);
+    setTheme();
+  }, [searchQuery, backgroundTheme]);
 
   const fetchData = async () => {
     const response = await fetch(`https://api.github.com/users/${searchQuery}`);
@@ -18,9 +20,18 @@ function App() {
     setUserData(data);
   };
 
+  function setTheme() {
+    backgroundTheme === 'light'
+      ? (document.body.className = '--light')
+      : (document.body.className = '--dark');
+  }
+
   return (
     <div className='content'>
-      <Header />
+      <Header
+        setBackgroundTheme={setBackgroundTheme}
+        currentTheme={backgroundTheme}
+      />
       <SearchBar setSearchQuery={setSearchQuery} />
       <UserProfile userData={userData} />
     </div>

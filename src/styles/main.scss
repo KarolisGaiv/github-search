@@ -11,13 +11,20 @@ html {
 }
 
 body {
-  background: $background-light;
-  color: $clr-font-blue;
   font-family: $main-font;
   font-size: 15px;
   line-height: 25px;
   min-height: 100vh;
   padding: 30px 25px 80px 25px;
+
+  &.--light {
+    background: $background-light;
+    color: $clr-font-blue;
+  }
+
+  &.--dark {
+    background: $background-dark;
+  }
 }
 
 .content {
