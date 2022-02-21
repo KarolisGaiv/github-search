@@ -20,6 +20,7 @@
   }
 
   @media (min-width: $breakpoint-laptop) {
+    display: flex;
     padding: 48px;
   }
 
@@ -30,6 +31,11 @@
     @media (min-width: $breakpoint-tablet) {
       align-items: center;
       margin-bottom: 25px;
+    }
+
+    @media (min-width: $breakpoint-laptop) {
+      display: block;
+      margin-bottom: 20px;
     }
 
     &__avatar {
@@ -45,6 +51,12 @@
   }
 
   &__details-container {
+    @media (min-width: $breakpoint-laptop) {
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     &__name {
       color: $ebony-clay;
       margin-bottom: 2px;
@@ -63,12 +75,20 @@
         font-size: 13px;
         line-height: 19px;
       }
+
+      @media (min-width: $breakpoint-laptop) {
+        grid-row-start: 2;
+      }
     }
 
     &__joined-data {
       color: $lynch;
       @media (max-width: $breakpoint-phone) {
         font-size: 13px;
+      }
+
+      @media (min-width: $breakpoint-laptop) {
+        text-align: end;
       }
     }
   }
