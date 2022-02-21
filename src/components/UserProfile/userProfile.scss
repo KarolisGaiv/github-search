@@ -124,6 +124,10 @@
       text-align: start;
     }
 
+    @media (min-width: $breakpoint-laptop) {
+      padding: 15px 32px;
+    }
+
     &__repo-details {
       margin-inline: 15px;
       width: 100%;
