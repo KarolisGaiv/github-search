@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.scss';
 import { ReactComponent as Moon } from '../../assets/icon-moon.svg';
+import { ReactComponent as Sun } from '../../assets/icon-sun.svg';
 
 function Header({ setBackgroundTheme, currentTheme }) {
   function changeTheme() {
@@ -19,7 +20,7 @@ function Header({ setBackgroundTheme, currentTheme }) {
           {currentTheme === 'light' ? 'dark' : 'light'}
         </h4>
         <span className='header__icon-container'>
-          <Moon />
+          {currentTheme === 'light' ? <Moon /> : <Sun />}
         </span>
       </button>
     </header>

@@ -20,7 +20,8 @@
   }
 
   @media (min-width: $breakpoint-laptop) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 48px;
   }
 
