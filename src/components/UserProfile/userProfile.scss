@@ -12,6 +12,7 @@
 
   &.--dark {
     background: $background-cloud-burst;
+    color: $background-white;
   }
 
   @media (min-width: $breakpoint-tablet) {
@@ -83,6 +84,10 @@
 
     &__joined-data {
       color: $lynch;
+
+      &.--dark {
+        color: $background-white;
+      }
       @media (max-width: $breakpoint-phone) {
         font-size: 13px;
       }
@@ -149,6 +154,10 @@
       font-size: 16px;
       font-weight: bold;
       line-height: 24px;
+
+      &.--dark {
+        color: $background-white;
+      }
 
       @media (min-width: $breakpoint-tablet) {
         font-size: 22px;

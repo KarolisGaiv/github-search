@@ -39,7 +39,13 @@ function UserProfile({ userData, currentTheme }) {
             <h3 className='user__details-container__login'>
               @{userData.login}
             </h3>
-            <p className='user__details-container__joined-data'>
+            <p
+              className={
+                currentTheme === 'light'
+                  ? 'user__details-container__joined-data'
+                  : 'user__details-container__joined-data user__details-container__joined-data --dark'
+              }
+            >
               Joined {changeDateFormat(userData.created_at)}
             </p>
           </div>
@@ -62,19 +68,37 @@ function UserProfile({ userData, currentTheme }) {
         >
           <div className='user__statistics-wrapper__repo-details'>
             <p className='user__statistics-wrapper__detail-header'>Repos</p>
-            <p className='user__statistics-wrapper__number'>
+            <p
+              className={
+                currentTheme === 'light'
+                  ? 'user__statistics-wrapper__number'
+                  : 'user__statistics-wrapper__number user__statistics-wrapper__number --dark'
+              }
+            >
               {userData.public_repos}
             </p>
           </div>
           <div className='user__statistics-wrapper__repo-details'>
             <p className='user__statistics-wrapper__detail-header'>Followers</p>
-            <p className='user__statistics-wrapper__number'>
+            <p
+              className={
+                currentTheme === 'light'
+                  ? 'user__statistics-wrapper__number'
+                  : 'user__statistics-wrapper__number user__statistics-wrapper__number --dark'
+              }
+            >
               {userData.followers}
             </p>
           </div>
           <div className='user__statistics-wrapper__repo-details'>
             <p className='user__statistics-wrapper__detail-header'>Following</p>
-            <p className='user__statistics-wrapper__number'>
+            <p
+              className={
+                currentTheme === 'light'
+                  ? 'user__statistics-wrapper__number'
+                  : 'user__statistics-wrapper__number user__statistics-wrapper__number --dark'
+              }
+            >
               {userData.following}
             </p>
           </div>
