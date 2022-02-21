@@ -13,7 +13,13 @@ function Header({ setBackgroundTheme, currentTheme }) {
   }
 
   return (
-    <header className='header'>
+    <header
+      className={
+        currentTheme === 'light'
+          ? 'header header--light'
+          : 'header header--dark'
+      }
+    >
       <h1 className='header__title'>devfinder</h1>
       <button className='header__page-style-button' onClick={changeTheme}>
         <h4 className='header__page-style-name'>

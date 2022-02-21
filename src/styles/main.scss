@@ -24,6 +24,12 @@ body {
 
   &.--dark {
     background: $background-dark;
+
+    & h1,
+    h4,
+    input::placeholder {
+      color: $background-light;
+    }
   }
 }
 
@@ -40,15 +46,10 @@ body {
 }
 
 h1 {
+  color: $ebony-clay;
   font-size: 26px;
   font-weight: bold;
   line-height: 38px;
-}
-
-h2 {
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 33px;
 }
 
 h3 {
