@@ -8,6 +8,10 @@
   &__page-style-name {
     color: $clr-font-blue;
     letter-spacing: 2.5px;
+
+    &:hover {
+      color: $ebony-clay;
+    }
   }
 
   &__page-style-button {

@@ -1,5 +1,7 @@
 @import '../../styles/base/base';
 
+$_azure-radiance-hover: #60abff;
+
 .search-form {
   align-items: center;
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
@@ -33,6 +35,7 @@
   input {
     background: inherit;
     border: none;
+    color: $ebony-clay;
     font-family: inherit;
     font-size: 13px;
     text-overflow: ellipsis;
@@ -52,6 +55,7 @@
     border: none;
     border-radius: 10px;
     color: white;
+    cursor: pointer;
     font-family: inherit;
     font-size: 14px;
     font-weight: bold;
@@ -60,6 +64,10 @@
     min-width: 85px;
     padding: 14px 12px;
     text-align: center;
+
+    &:hover {
+      background: $_azure-radiance-hover;
+    }
 
     @media (min-width: $breakpoint-tablet) {
       font-size: 16px;
