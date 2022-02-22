@@ -39,6 +39,7 @@ $_azure-radiance-hover: #60abff;
     font-family: inherit;
     font-size: 13px;
     text-overflow: ellipsis;
+    padding: 10px 0;
     width: 100%;
 
     @media (min-width: $breakpoint-tablet) {
