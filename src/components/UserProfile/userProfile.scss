@@ -20,11 +20,11 @@
     margin-top: 24px;
   }
 
-  @media (min-width: $breakpoint-laptop) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 48px;
-  }
+  // @media (min-width: $breakpoint-laptop) {
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   padding: 48px;
+  // }
 
   &__header {
     display: flex;
@@ -35,10 +35,10 @@
       margin-bottom: 25px;
     }
 
-    @media (min-width: $breakpoint-laptop) {
-      display: block;
-      margin-bottom: 20px;
-    }
+    // @media (min-width: $breakpoint-laptop) {
+    //   display: block;
+    //   margin-bottom: 20px;
+    // }
 
     &__avatar {
       border-radius: 50%;
@@ -53,11 +53,11 @@
   }
 
   &__details-container {
-    @media (min-width: $breakpoint-laptop) {
-      align-items: center;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
+    // @media (min-width: $breakpoint-laptop) {
+    //   align-items: center;
+    //   display: grid;
+    //   grid-template-columns: repeat(2, 1fr);
+    // }
 
     &__name {
       margin-bottom: 2px;
@@ -77,9 +77,9 @@
         line-height: 19px;
       }
 
-      @media (min-width: $breakpoint-laptop) {
-        grid-row-start: 2;
-      }
+      // @media (min-width: $breakpoint-laptop) {
+      //   grid-row-start: 2;
+      // }
     }
 
     &__joined-data {
@@ -92,9 +92,9 @@
         font-size: 13px;
       }
 
-      @media (min-width: $breakpoint-laptop) {
-        text-align: end;
-      }
+      // @media (min-width: $breakpoint-laptop) {
+      //   text-align: end;
+      // }
     }
   }
 
@@ -170,7 +170,9 @@
     list-style: none;
 
     @media (min-width: $breakpoint-tablet) {
-      display: flex;
+      // display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     &__container {
