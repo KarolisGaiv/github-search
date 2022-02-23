@@ -118,6 +118,7 @@ function UserProfile({ userData, currentTheme }) {
               ? 'user__contact-details__item'
               : 'user__contact-details__item user__contact-details__item --no-details'
           }
+          id='website'
         >
           <WebsiteIcon className='user__contact-details__icon' />
           <a href={userData.blog}>{displayContactDetail(userData.blog)}</a>

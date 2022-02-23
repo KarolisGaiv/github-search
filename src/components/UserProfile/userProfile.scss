@@ -172,6 +172,7 @@
     @media (min-width: $breakpoint-tablet) {
       // display: flex;
       display: grid;
+      column-gap: 65px;
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -211,5 +212,13 @@
         opacity: 0.5;
       }
     }
+  }
+}
+
+// This id selector is to change website placement in the grid as per styling guide
+#website {
+  @media (min-width: $breakpoint-tablet) {
+    grid-column: 1/2;
+    grid-row: 2/2;
   }
 }
