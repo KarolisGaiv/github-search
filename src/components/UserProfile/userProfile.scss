@@ -20,16 +20,9 @@
   }
 
   @media (min-width: $breakpoint-tablet) {
-    display: grid;
     column-gap: 40px;
     grid-template-columns: 120px 1fr;
     padding: 40px;
-    row-gap: 30px;
-  }
-
-  @media (min-width: $breakpoint-laptop) {
-    display: grid;
-    grid-template-columns: 120px 1fr;
   }
 
   &__header {
