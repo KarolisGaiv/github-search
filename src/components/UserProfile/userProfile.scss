@@ -17,9 +17,10 @@
 
   @media (min-width: $breakpoint-tablet) {
     display: grid;
+    column-gap: 40px;
     grid-template-columns: 120px 1fr;
-    gap: 40px;
     padding: 40px;
+    row-gap: 30px;
   }
 
   @media (min-width: $breakpoint-laptop) {
