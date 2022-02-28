@@ -20,6 +20,12 @@
     margin-top: 24px;
   }
 
+  @media (min-width: $breakpoint-laptop) {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 40px;
+  }
+
   // @media (min-width: $breakpoint-laptop) {
   //   display: grid;
   //   grid-template-columns: repeat(2, 1fr);
@@ -35,10 +41,11 @@
       margin-bottom: 25px;
     }
 
-    // @media (min-width: $breakpoint-laptop) {
-    //   display: block;
-    //   margin-bottom: 20px;
-    // }
+    @media (min-width: $breakpoint-laptop) {
+      display: block;
+      grid-column: 2;
+      grid-row: 1;
+    }
 
     &__avatar {
       border-radius: 50%;
@@ -49,15 +56,20 @@
         height: 120px;
         margin-right: 40px;
       }
+
+      @media (min-width: $breakpoint-laptop) {
+        grid-column: 1;
+        grid-row: 1;
+      }
     }
   }
 
   &__details-container {
-    // @media (min-width: $breakpoint-laptop) {
-    //   align-items: center;
-    //   display: grid;
-    //   grid-template-columns: repeat(2, 1fr);
-    // }
+    @media (min-width: $breakpoint-laptop) {
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     &__name {
       margin-bottom: 2px;
@@ -77,9 +89,9 @@
         line-height: 19px;
       }
 
-      // @media (min-width: $breakpoint-laptop) {
-      //   grid-row-start: 2;
-      // }
+      @media (min-width: $breakpoint-laptop) {
+        grid-column: 1;
+      }
     }
 
     &__joined-data {
@@ -92,9 +104,11 @@
         font-size: 13px;
       }
 
-      // @media (min-width: $breakpoint-laptop) {
-      //   text-align: end;
-      // }
+      @media (min-width: $breakpoint-laptop) {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: end;
+      }
     }
   }
 
@@ -105,6 +119,12 @@
 
     @media (max-width: $breakpoint-phone) {
       font-size: 13px;
+    }
+
+    @media (min-width: $breakpoint-laptop) {
+      align-self: flex-end;
+      grid-column: 2;
+      grid-row: 1;
     }
   }
 
@@ -130,6 +150,8 @@
     }
 
     @media (min-width: $breakpoint-laptop) {
+      grid-column: 2;
+      margin: 0;
       padding: 15px 32px;
     }
 
@@ -174,6 +196,10 @@
       display: grid;
       column-gap: 65px;
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $breakpoint-laptop) {
+      grid-column: 2;
     }
 
     &__container {

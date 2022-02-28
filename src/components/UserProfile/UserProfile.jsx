@@ -27,12 +27,12 @@ function UserProfile({ userData, currentTheme }) {
         currentTheme === 'light' ? 'user user --light' : 'user user --dark'
       }
     >
+      <img
+        src={userData.avatar_url}
+        alt='user avatar'
+        className='user__header__avatar'
+      />
       <header className='user__header'>
-        <img
-          src={userData.avatar_url}
-          alt='user avatar'
-          className='user__header__avatar'
-        />
         <div className='user__details-container'>
           <h1 className='user__details-container__name'>{userData.name}</h1>
           <h3 className='user__details-container__login'>@{userData.login}</h3>
