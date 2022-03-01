@@ -27,11 +27,12 @@
 
   &__header {
     @media (min-width: $breakpoint-tablet) {
-      align-items: center;
+      align-self: center;
       grid-area: 1/2/1/3;
     }
 
     @media (min-width: $breakpoint-laptop) {
+      align-self: auto;
       display: block;
       grid-column: 2;
       grid-row: 1;
@@ -111,6 +112,7 @@
 
     @media (min-width: $breakpoint-tablet) {
       grid-area: 2/1/2/3;
+      font-size: 15px;
     }
 
     @media (min-width: $breakpoint-laptop) {
