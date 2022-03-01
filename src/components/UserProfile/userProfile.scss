@@ -5,7 +5,7 @@
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   column-gap: 20px;
   display: grid;
-  grid-template-columns: 70px 185px;
+  grid-template-columns: 70px minmax(185px, 1fr);
   margin-top: 16px;
   padding: 32px 24px 48px 24px;
   row-gap: 25px;
@@ -102,13 +102,11 @@
   }
 
   &__biography {
+    grid-area: 2/1/2/3;
+    font-size: 13px;
+
     &.--error {
       opacity: 0.75;
-    }
-
-    @media (max-width: $breakpoint-phone) {
-      grid-area: 2/1/2/3;
-      font-size: 13px;
     }
 
     @media (min-width: $breakpoint-tablet) {
