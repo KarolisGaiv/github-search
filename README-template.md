@@ -55,29 +55,14 @@ Users should be able to:
 
 Second project where I've started with Mobile-first workflow. Was a really good practice until I saw how application looks like on desktop view. This just proved that it is better to spend more time with a blank sheet of paper and thinking about whole project, it's structure and components instead of jumping straight to coding.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Besides that, I've improved my skills working with CSS Grid. I've tried to do everything with just plain Flexbox, but CSS Grid is more suitable for element layout. I finally understood how I can manipulate element positioning in the grid by using grid-area property
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+&__contact-details {
+  grid-area: 4/1/4/3;
+  list-style: none;
 }
 ```
-
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
