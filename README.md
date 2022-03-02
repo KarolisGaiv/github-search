@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repo](https://github.com/KarolisGaiv/github-search)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Check it out live!](https://karolisgaiv.github.io/github-search/)
 
 ## My process
 
