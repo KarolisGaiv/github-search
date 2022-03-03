@@ -35,7 +35,7 @@ function UserProfile({ userData, currentTheme }) {
       <header className='user__header'>
         <div className='user__details-container'>
           <h1 className='user__details-container__name'>{userData.name}</h1>
-          <h3 className='user__details-container__login'>@{userData.login}</h3>
+          <p className='user__details-container__login'>@{userData.login}</p>
           <p
             className={
               currentTheme === 'light'
