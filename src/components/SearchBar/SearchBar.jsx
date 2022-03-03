@@ -30,6 +30,7 @@ function SearchBar({ setSearchQuery, currentTheme }) {
         Search Github username
       </label>
       <input
+        name='githubName'
         type='text'
         placeholder='Search GitHub username...'
         onChange={handleChange}
